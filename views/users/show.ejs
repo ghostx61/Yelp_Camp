@@ -1,0 +1,24 @@
+<% include ../partials/header %>
+<div class="container">  
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="<%= user.avatar%>">
+                <div id="avatarName" class="font1">
+                    <h4><%= user.firstName%> <%= user.lastName%></h4>
+                    <a href="#"><%= user.email %></a>
+                </div>
+            </div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        </div>
+        <div class="col-md-8">  
+            <h3><strong><%= user.firstName%>'s campgrounds:</strong></h3>
+            <ul>
+            <% campgrounds.forEach(function(campground){ %>
+                    <li><a href="/campgrounds/<%= campground.id%>"><%= campground.name%></a></li>
+            <% }); %>  
+            </ul>
+        </div>
+    </div>
+</div>  
+<% include ../partials/footer %>

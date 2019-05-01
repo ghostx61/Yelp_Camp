@@ -1,0 +1,50 @@
+#show_img{
+    padding: 0;
+}
+
+.thumbnail img{
+    width:100%;
+}
+
+.thumbnail .caption-full{
+    padding: 9px;
+}
+
+#camp_img{
+    height: 160px;
+}
+
+#commentLine{
+    margin: 6px auto;
+}
+
+#topLine{
+    border-color: #ddd;
+    margin-bottom: 10px;
+}
+
+.deleteForm{
+    display: inline;
+}
+
+.glyphicon {
+    top:10px;
+}
+
+.jumbotron{
+    text-align: center;
+}
+
+.font1{
+    font-family: 'Roboto Slab', serif;
+    font-size: medium;
+}
+
+.font2{
+    font-family: 'Playfair Display', serif;
+        font-size: 16px;
+}
+
+#avatarName{
+    text-align: center;
+}
